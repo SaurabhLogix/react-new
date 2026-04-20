@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    @apply m-0 p-0 antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-white text-slate-900 selection:bg-red-600 selection:text-white;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-red-500 ring-offset-2;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-slate-50;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full hover:bg-slate-400 transition-colors;
+}
+
+/* Nav Link Hover Underline */
+.nav-link-hover {
+  position: relative;
+}
+.nav-link-hover::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #dc2626;
+  transition: width 0.3s ease;
+}
+.nav-link-hover:hover::after {
+  width: 100%;
+}
+
+/* Glassmorphic Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-card-dark {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Perspective container for 3D tilt cards */
+.perspective-container {
+  perspective: 1200px;
+}
+
+/* Sticky stack card styles */
+.stack-card {
+  will-change: transform;
+}
+
+/* Smooth image reveal */
+.img-reveal {
+  clip-path: inset(100% 0 0 0);
+}
+.img-reveal.active {
+  clip-path: inset(0 0 0 0);
+  transition: clip-path 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* Liquid displacement filter — injected as inline SVG in Slider */
+.liquid-wrap {
+  filter: url(#liquid-filter);
+  transition: filter 0.6s ease;
+}

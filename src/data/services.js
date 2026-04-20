@@ -1,0 +1,60 @@
+const servicesList = [
+    {
+        title: "Financial Planning",
+        slug: "financial-planning",
+        desc: "Comprehensive financial blueprints tailored to your income, expenses, and life goals. We analyze your complete financial picture to create actionable plans.",
+        features: ["Cash Flow Analysis", "Net Worth Tracking", "Debt Management", "Emergency Fund Strategy"],
+        iconBg: "bg-red-600", cardBg: "bg-red-50", iconText: "text-red-600",
+        icon: "M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z",
+    },
+    {
+        title: "Investment Planning",
+        slug: "investment-planning",
+        desc: "Expert-curated portfolios across equity, debt, and hybrid mutual funds. We analyze 500+ schemes to match your risk profile and time horizon.",
+        features: ["Mutual Funds (SIP & Lump Sum)", "Equity Portfolio", "Debt Instruments", "Portfolio Rebalancing"],
+        iconBg: "bg-blue-600", cardBg: "bg-blue-50", iconText: "text-blue-600",
+        icon: "M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941",
+    },
+    {
+        title: "Goal Planning",
+        slug: "goal-planning",
+        desc: "Structured financial roadmaps for every milestone — from your child's education to buying your dream home. Every goal gets its own strategy.",
+        features: ["Child Education Fund", "Home Purchase Plan", "Marriage Planning", "Wealth Creation Goals"],
+        iconBg: "bg-emerald-600", cardBg: "bg-emerald-50", iconText: "text-emerald-600",
+        icon: "M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5",
+    },
+    {
+        title: "Tax Planning",
+        slug: "tax-planning",
+        desc: "Maximize your savings with ELSS, PPF, NPS, and other Section 80C instruments. Strategic tax planning that grows your wealth while reducing liability.",
+        features: ["ELSS & Tax-Saving Funds", "NPS Advisory", "Tax Harvesting", "HUF & Capital Gains Planning"],
+        iconBg: "bg-amber-600", cardBg: "bg-amber-50", iconText: "text-amber-600",
+        icon: "M9 14.25l6-6m4.5-3.493V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0c1.1.128 1.907 1.077 1.907 2.185zM9.75 9h.008v.008H9.75V9zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm4.125 4.5h.008v.008h-.008V13.5zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z",
+    },
+    {
+        title: "Risk Management",
+        slug: "risk-management",
+        desc: "Protect your family and assets with the right insurance coverage. We compare 30+ insurers to find optimal term, health, and general insurance plans.",
+        features: ["Term Life Insurance", "Health Insurance", "Critical Illness Cover", "Asset Protection"],
+        iconBg: "bg-violet-600", cardBg: "bg-violet-50", iconText: "text-violet-600",
+        icon: "M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z",
+    },
+    {
+        title: "Retirement Planning",
+        slug: "retirement-planning",
+        desc: "Build a corpus that lets you retire with dignity and financial independence. Strategic pension, annuity, and SWP allocation for steady post-retirement income.",
+        features: ["Pension Fund Allocation", "SWP Strategy", "Annuity Plans", "Early Retirement Planning"],
+        iconBg: "bg-sky-600", cardBg: "bg-sky-50", iconText: "text-sky-600",
+        icon: "M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z",
+    },
+    {
+        title: "NRI Services",
+        slug: "nri-services",
+        desc: "Specialized financial advisory for Non-Resident Indians. We handle NRE/NRO investments, repatriation planning, and India-based portfolio management.",
+        features: ["NRE/NRO Investments", "Repatriation Planning", "India Property Advisory", "DTAA Tax Benefits"],
+        iconBg: "bg-rose-600", cardBg: "bg-rose-50", iconText: "text-rose-600",
+        icon: "M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418",
+    },
+];
+
+export default servicesList;
