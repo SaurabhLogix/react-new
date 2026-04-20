@@ -1,0 +1,20 @@
+name: Docker Build Check
+
+# Ye automation kab chalega? Jab bhi aap 'main' branch par push karenge
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest # GitHub humein ek free linux machine dega
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build Docker Image
+        run: docker build -t subhinvest-test .
+        
+      - name: Run Docker Test
+        run: echo "Build successful on GitHub Actions!"
