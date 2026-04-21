@@ -35,7 +35,7 @@ const Footer = () => {
                             </Link>
                         </div>
                         <p className="text-slate-400 leading-relaxed max-w-sm">
-                            Crafting premium financial futures through data-driven strategies and personalized advisory. Excellence in every investment.
+                            Crafting premium financial futures through data-driven strategies and personalized advisory. Excellence in every investment of your's.
                         </p>
                     </div>
 
