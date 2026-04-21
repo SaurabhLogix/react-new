@@ -142,7 +142,7 @@ const Footer = () => {
                 {/* Bottom Bar */}
                 <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
                     <p className="text-slate-500 text-sm">
-                        © {new Date().getFullYear()} Subh Invest. Built for the future of finance.
+                        © {new Date().getFullYear()} Subh Invest. Built for the future of finance. "Version 1.0"
                     </p>
                     <div className="flex gap-8 text-xs font-medium text-slate-500 uppercase tracking-widest">
                         <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>

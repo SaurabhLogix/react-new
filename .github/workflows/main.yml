@@ -23,6 +23,9 @@ jobs:
           context: .
           push: true
           # Aapka username automation se uthayega
-          tags: ${{ secrets.DOCKER_USERNAME }}/subhinvest:latest
+          tags: |
+            ${{ secrets.DOCKER_USERNAME }}/subhinvest:latest
+            ${{ secrets.DOCKER_USERNAME }}/subhinvest:v1.0
+
 
     
